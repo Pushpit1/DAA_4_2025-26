@@ -1,3 +1,13 @@
+// Time Complexity: O(K × E)
+// K = maximum number of stops
+// E = number of flights (edges)
+// We process all edges for up to K levels
+
+// Space Complexity: O(N + E)
+// N = number of cities (nodes)
+// E = adjacency list storage
+// Additional space used by queue and cost array
+
 class Solution {
     public:
         int findCheapestPrice(int n, vector<vector<int>>& flights, int s, int d, int k) {
